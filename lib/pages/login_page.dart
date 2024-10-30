@@ -7,15 +7,17 @@ import 'package:chat/widgets/logo.dart';
 
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:  Color(0xffF2F2F2),
+      backgroundColor:  const Color(0xffF2F2F2),
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
-          child: Container(
+          physics: const BouncingScrollPhysics(),
+          child: SizedBox(
             height: MediaQuery.of(context).size.height * 0.9,
             child: const Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -41,8 +43,7 @@ class LoginPage extends StatelessWidget {
 
 class _Form extends StatefulWidget {
 
-   const _Form( { Key? key } )
-       : super(key: key);
+   const _Form( { super.key } );
 
   @override
    _FormState createState() =>  _FormState();
@@ -58,8 +59,8 @@ class  _FormState extends State<_Form>{
   Widget build(BuildContext context){
 
     return Container(
-      margin: EdgeInsets.only(top: 40),
-      padding: EdgeInsets.symmetric(horizontal: 50),
+      margin: const EdgeInsets.only(top: 40),
+      padding: const EdgeInsets.symmetric(horizontal: 50),
       child: Column(
         children: [
           

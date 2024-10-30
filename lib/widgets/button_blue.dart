@@ -18,15 +18,15 @@ final void Function() onPressed;
       style: ElevatedButton.styleFrom(
         elevation: 2,
         backgroundColor: Colors.blue,
-        shape: StadiumBorder(),
+        shape: const StadiumBorder(),
       ),
 
       onPressed: onPressed, 
-      child: Container(
+      child: SizedBox(
         width: double.infinity,
         height: 55,
         child: Center(
-          child: Text(text, style: TextStyle( color: Colors.white, fontSize: 17 )),
+          child: Text(text, style: const TextStyle( color: Colors.white, fontSize: 17 )),
         ),
       )
     );
