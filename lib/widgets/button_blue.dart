@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 class ButtonBlue extends StatelessWidget {
 
 final String text;
-final void Function() onPressed;
+final void Function() ?onPressed;
 
   const ButtonBlue({
     super.key, 
     required this.text,
-    required this.onPressed
+    this.onPressed
   });
 
   @override
